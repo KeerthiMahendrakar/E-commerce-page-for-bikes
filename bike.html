@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-BIKES</title>
+    <link rel="stylesheet" href="bike.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo img{
+    margin: 0;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+nav{
+    flex: 1px;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 8px;
+
+}
+a{
+    text-decoration:none;
+    font-size: 13px;
+    color: #555;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6650d9;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+nav ul li:hover:after{
+    width:100%;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    min-height: 600px;
+    /* max-height: 00px; */
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.col2{
+    flex-basis:50%;
+    min-width: 300px;
+}
+.col2 img{
+    max-width:100% ;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px;
+}
+.header{
+    background: rgb(224, 243, 233);
+ }
+.header .row{
+     margin-top: 70px;
+ }
+ .categories{
+    margin: 70px 0;
+ }
+.col-3{
+    flex-basis: 30%;
+    min-width: 250;
+    margin-bottom: 30px;
+    min-height: 200px;
+ }
+ .clip-circle{
+    clip-path: circle(50.1% at 50% 50%);
+ }
+ .col-3 img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ .small-container{
+    max-width: 1050px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ .title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position:relative;
+    line-height: 60px;
+    color: rgb(60, 57, 57);
+}
+.title::after{
+    content: '';
+    background: #f17e04;
+    width: 180px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.small-container{
+max-width:1080px;
+margin-auto;
+padding-left:25px;
+padding-right:25px;
+}
+.col-4{
+flex-basis:25%;
+padding:10px;
+min-width:200px;
+margin-bottom:50px;
+}
+.col-4 img{
+width:100%;
+}
+.title{
+text-align:center;
+margin:0 auto 80px;
+position:relative;
+line-height:60px;
+color:#555;
+}
+.title::{
+content:'';
+background:#ff523b;
+width:80px;
+height:5px;
+border-radius:5px;
+position:absolute;
+}
+h4{
+color:#555;
+}
+.rating .fa{
+color:#ff523b;
+}
+.col-4:hover{
+background-color:#fff;
+color:#000;
+transform:translateY(-5px);
+transition:0.6s ease;
+}
+.offer-img{
+float:left;
+}
+.title h2{
+left:50%;
+}
+.footer{
+background:#000;
+color:#8a8a8a;
+font-size:14px;
+padding:40px 0 20px;
+}
+.footer p{
+color:#8a8a8a;
+}
+.footer h3{
+color:white;
+margin-bottom:20px;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="https://www.designevo.com/res/templates/thumb_small/yellow-racer-and-bicycle.webp" alt="" width="100px">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">service </a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">About us</a></li>
+                        </ul>
+                    </nav>
+                    <br>
+                </div>
+                <div class="row">
+                        <img src="https://www.financialexpress.com/wp-content/uploads/2021/09/Ducati-Monster-4.jpg" alt="" width="600px">
+                        <h1>START YOUR ADVENTURE</h1></br>
+                        <h4>Branded sports bike collection</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="categories">
+  <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="https://media.theradavist.com/uploads/2013/06/Great-Divide-Shimano-3_4.jpg?w=650&quality=75">
+            </div>
+            <div class="col-3">
+                <img src="https://th.bing.com/th/id/R.000fe79fca471f5f945228738a4fe499?rik=Y5j%2bX2AgxV7KQA&riu=http%3a%2f%2fmoto.zombdrive.com%2fimages1600_%2fmz-mosquito-125rx-3.jpg&ehk=uTlLpFvR40ljTiyua0ehFlKquWol%2bTRZCr11qjNNARg%3d&risl=&pid=ImgRaw&r=0">
+            </div>
+            <div class="col-3">
+                <img
+                    src="https://th.bing.com/th/id/R.40daa145a7d40c1d8a3f6ca27ad58024?rik=X3u5OAuG8f%2bMyw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-iNoejH3UUIQ%2fU1t_EnRUPDI%2fAAAAAAAAL-Y%2fgvs-XzmjWao%2fs1600%2fbikes-wallpapers-hd-for-pc-(12).jpg&ehk=kytEBMSGhFeA7Wm8hAPtqURMm4jDOQeujwqW6ttp%2bkc%3d&risl=&pid=ImgRaw&r=0">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-----------------featured products-------------------->
+    <div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+    <div class="col-4">
+    <img src="https://th.bing.com/th/id/R.f5fc3928f5554f066f909d93fcb8a515?rik=ZCWMi8jBacpFjg&riu=http%3a%2f%2fs1.cdn.autoevolution.com%2fimages%2fmoto_gallery%2fDUCATI-749-11566_3.jpg&ehk=ZMH63TCL4yWVx4SydCpuarqJTEK9%2fQ0PdcdpkzyPfxQ%3d&risl=&pid=ImgRaw&r=0">
+    <h4>Ducati 999</h4>
+    <div class="rating">
+    
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+       <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <p>$1000.00</p>
+    </div>
+    <div class="col-4">
+    <img src="https://th.bing.com/th/id/R.f9142504ad99c3cb88ed5b52fb28407a?rik=nmqg%2b30TkOZBPw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-r96Ltn4F9UE%2fUmvdNqUOySI%2fAAAAAAAAA-Y%2foeD78jlbyes%2fs1600%2fhd%2bbike%2bwallpapers%2b1080p_.jpeg&ehk=xgpitlPg8P%2fxkPTnL1Me3h9D8rllX6PqzF49J9AfaCw%3d&risl=&pid=ImgRaw&r=0">
+    <h4>Lady-bird</h4>
+    <div class="rating">
+    
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    
+       <i class="fa fa-star-half-o" aria-hidden="true"></i>
+    </div>
+    <p>$100.00</p>
+    </div>
+    <div class="col-4">
+    <img src="https://th.bing.com/th/id/OIP.NR0nGBiLb3wI-jtPWSCMzwHaE8?pid=ImgDet&rs=1">
+    <h4>Activa</h4>
+    <div class="rating">
+    
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    
+       <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <p>$200.00</p>
+    </div>
+    <div class="col-4">
+    <img src="https://bikeadvice.in/wp-content/uploads/2015/10/Hero-Splendor-Pro1.jpg">
+    <h4>Splendor ++</h4>
+    <div class="rating">
+    
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    
+       <i class="fa fa-star-half-o" aria-hidden="true"></i>
+    </div>
+    <p>$150.00</p>
+    </div>
+    </div>
+    </div>
+    <!--------offer------------->
+    
+    <div class="offer">
+    <div class="small-container">
+    <div class="row">
+   
+    <div class="col-2">
+    <h2 class="title">Exclusively Available</h2>
+     <img class="offer-img" src="https://th.bing.com/th/id/R.f9142504ad99c3cb88ed5b52fb28407a?rik=nmqg%2b30TkOZBPw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-r96Ltn4F9UE%2fUmvdNqUOySI%2fAAAAAAAAA-Y%2foeD78jlbyes%2fs1600%2fhd%2bbike%2bwallpapers%2b1080p_.jpeg&ehk=xgpitlPg8P%2fxkPTnL1Me3h9D8rllX6PqzF49J9AfaCw%3d&risl=&pid=ImgRaw&r=0" width="800px" height="800px"></div>
+    
+    
+<h1>CBR1000RR super sports bike</h1>
+<p>This year the CBR1000RR super sports bike, popular for its high performance and stylish design, has undergone a full model change, featuring the latest in advanced technologies honed in Honda’s MotoGP (FIM* Road Racing World Championship Grand Prix) machines. The engine and frame construction have been changed along with the fairing design for weight reduction and greater concentration of mass.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-------------footer------------------>
+    
+    <div class="footer">
+    <div class="container" >
+    <div class="row">
+    <div class="footer-col-1">
+    <h3>Download Our App</h3>
+    <p>Download App for Android and ios mobile phone</p>
+    <img src="https://4.bp.blogspot.com/-X6vemqzbfNU/WBd9a_dfQXI/AAAAAAAADf4/6aYuthV--8Y4OcKYVtGVM1NKp3PP2xxVgCLcB/s1600/image00.png" height="100px" width="200px">
+    <img src="">
+    </div>
+    <div class="footer-col-2">
+    <img src="https://www.designevo.com/res/templates/thumb_small/yellow-racer-and-bicycle.webp" width="80px" height="80px">
+    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to many</p>
+     </div>
+      <div class="footer-col-3">
+    <h3>Useful Links</h3>
+    <ul>
+    <li>Coupons</li>
+    <li>Blog Post</li>
+    <li>Return Policy</li>
+    <li>Join Affiliate</li>
+    </ul>
+    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to many</p>
+     </div>
+    </div>
+    </div>
+    </div>
+    
+    
+</body>
+
+</html>
